@@ -1,6 +1,5 @@
-const express = require('express');
-const router = express.Router();
+const auth = require('./auth');
 
-router.get('/api/login', (req, res) => res.json());
-
-module.exports = router;
+module.exports = app => {
+  app.use('/api/auth', auth);
+};
