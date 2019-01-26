@@ -19,9 +19,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// require('./models');
-
-app.use('/', require('./routes'));
+require('./routes')(app);
 
 server.listen(appConfig.port, () => {
   console.log(`App started on port ${appConfig.port}`);

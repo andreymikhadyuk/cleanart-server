@@ -3,6 +3,13 @@
     "node": true,
     "es6": true
   },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module"
+  },
   "rules": {
     "comma-dangle": 0,
     "no-unused-vars": [
